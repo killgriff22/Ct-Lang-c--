@@ -23,4 +23,8 @@
 <lh><h1>Using the prebuilt binaries (Windows Only 05.09.2023)</h1></lh>
   
   
+<<<<<<< HEAD
 </ol>
+=======
+</ol>
+>>>>>>> aa12934b9ffd23c1742e5a233b586cac7da5de51
