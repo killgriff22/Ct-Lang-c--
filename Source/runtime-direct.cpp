@@ -202,6 +202,120 @@ int main( int argc, char *argv[] )
                 } else {
                     std::cout << "ERROR CANNOT JUMP " << i << std::endl;
                 }
+            } else if (code == "9D"){//Subtraction
+                i++;
+                code=codes[i];
+                if (code == "1A"){
+                    i++;
+                    code = codes[i];
+                    if (code == "1A"){
+                        ARegister1 = ARegister1 - ARegister1;
+                    } else if (code == "2A"){
+                        ARegister1 = ARegister1 - ARegister2;
+                    } else if (code == "1B"){
+                        ARegister1 = ARegister1 - std::stoi(BRegister1);
+                    } else if (code == "2B"){
+                        ARegister1 = ARegister1 - std::stoi(BRegister2);
+                    } else if (code == "1C"){
+                        ARegister1 = ARegister1 - CRegister1;
+                    } else if (code == "2C"){
+                        ARegister1 = ARegister1 - CRegister2;
+                    }
+                } else if (code == "2A"){
+                    i++;
+                    code=codes[i];
+                    if (code == "1A"){
+                        ARegister2 = ARegister2 - ARegister1;
+                    } else if (code == "2A"){
+                        ARegister2 = ARegister2 - ARegister2;
+                    } else if (code == "1B"){
+                        ARegister2 = ARegister2 - std::stoi(BRegister1);
+                    } else if (code == "2B"){
+                        ARegister2 = ARegister2 - std::stoi(BRegister2);
+                    } else if (code == "1C"){
+                        ARegister2 = ARegister2 - CRegister1;
+                    } else if (code == "2C"){
+                        ARegister2 = ARegister2 - CRegister2;
+                    }
+                } else {
+                    std::cout << "ERROR CANNOT SUBTRACT " << i << std::endl;
+                }
+            } else if (code == "9F"){//Multiplication
+                i++;
+                code=codes[i];
+                if (code == "1A"){
+                    i++;
+                    code = codes[i];
+                    if (code == "1A"){
+                        ARegister1 = ARegister1 * ARegister1;
+                    } else if (code == "2A"){
+                        ARegister1 = ARegister1 * ARegister2;
+                    } else if (code == "1B"){
+                        ARegister1 = ARegister1 * std::stoi(BRegister1);
+                    } else if (code == "2B"){
+                        ARegister1 = ARegister1 * std::stoi(BRegister2);
+                    } else if (code == "1C"){
+                        ARegister1 = ARegister1 * CRegister1;
+                    } else if (code == "2C"){
+                        ARegister1 = ARegister1 * CRegister2;
+                    }
+                } else if (code == "2A"){
+                    i++;
+                    code=codes[i];
+                    if (code == "1A"){
+                        ARegister2 = ARegister2 * ARegister1;
+                    } else if (code == "2A"){
+                        ARegister2 = ARegister2 * ARegister2;
+                    } else if (code == "1B"){
+                        ARegister2 = ARegister2 * std::stoi(BRegister1);
+                    } else if (code == "2B"){
+                        ARegister2 = ARegister2 * std::stoi(BRegister2);
+                    } else if (code == "1C"){
+                        ARegister2 = ARegister2 * CRegister1;
+                    } else if (code == "2C"){
+                        ARegister2 = ARegister2 * CRegister2;
+                    }
+                } else {
+                    std::cout << "ERROR CANNOT MULTIPLY " << i << std::endl;
+                }
+            } else if (code == "AA"){//Division
+                i++;
+                code=codes[i];
+                if (code == "1A"){
+                    i++;
+                    code = codes[i];
+                    if (code == "1A"){
+                        ARegister1 = ARegister1 / ARegister1;
+                    } else if (code == "2A"){
+                        ARegister1 = ARegister1 / ARegister2;
+                    } else if (code == "1B"){
+                        ARegister1 = ARegister1 / std::stoi(BRegister1);
+                    } else if (code == "2B"){
+                        ARegister1 = ARegister1 / std::stoi(BRegister2);
+                    } else if (code == "1C"){
+                        ARegister1 = ARegister1 / CRegister1;
+                    } else if (code == "2C"){
+                        ARegister1 = ARegister1 / CRegister2;
+                    }
+                } else if (code == "2A"){
+                    i++;
+                    code=codes[i];
+                    if (code == "1A"){
+                        ARegister2 = ARegister2 / ARegister1;
+                    } else if (code == "2A"){
+                        ARegister2 = ARegister2 / ARegister2;
+                    } else if (code == "1B"){
+                        ARegister2 = ARegister2 / std::stoi(BRegister1);
+                    } else if (code == "2B"){
+                        ARegister2 = ARegister2 / std::stoi(BRegister2);
+                    } else if (code == "1C"){
+                        ARegister2 = ARegister2 / CRegister1;
+                    } else if (code == "2C"){
+                        ARegister2 = ARegister2 / CRegister2;
+                    }
+                } else {
+                    std::cout << "ERROR CANNOT SUBTRACT " << i << std::endl;
+                }
             }
         }
       }

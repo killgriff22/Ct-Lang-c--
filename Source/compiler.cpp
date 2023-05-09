@@ -104,6 +104,93 @@ int main( int argc, char *argv[] )
                     std::cout << "ERROR: Invalid condition" << std::endl;
                   }
                 }
+                if (line.substr(0,3) == "SUB"){
+                  fileout << "9D ";
+                  if (line.substr(4,2) == "A1"){
+                    fileout << "1A ";
+                  } else if (line.substr(4,2) == "B1"){
+                    fileout << "1B ";
+                  } else if (line.substr(4,2) == "C1"){
+                    fileout << "1C ";
+                  } else if (line.substr(4,2) == "A2"){
+                    fileout << "2A ";
+                  } else if (line.substr(4,2) == "B2"){
+                    fileout << "2B ";
+                  } else if (line.substr(4,2) == "C2"){
+                    fileout << "2C ";
+                  }
+                  if (line.substr(6,2) == "A1"){
+                    fileout << "1A ";
+                  } else if (line.substr(6,2) == "B1"){
+                    fileout << "1B ";
+                  } else if (line.substr(6,2) == "C1"){
+                    fileout << "1C ";
+                  } else if (line.substr(6,2) == "A2"){
+                    fileout << "2A ";
+                  } else if (line.substr(6,2) == "B2"){
+                    fileout << "2B ";
+                  } else if (line.substr(6,2) == "C2"){
+                    fileout << "2C ";
+                  }
+                }
+                if (line.substr(0,3) == "MUL"){
+                  fileout << "9F ";
+                  if (line.substr(4,2) == "A1"){
+                    fileout << "1A ";
+                  } else if (line.substr(4,2) == "B1"){
+                    fileout << "1B ";
+                  } else if (line.substr(4,2) == "C1"){
+                    fileout << "1C ";
+                  } else if (line.substr(4,2) == "A2"){
+                    fileout << "2A ";
+                  } else if (line.substr(4,2) == "B2"){
+                    fileout << "2B ";
+                  } else if (line.substr(4,2) == "C2"){
+                    fileout << "2C ";
+                  }
+                  if (line.substr(6,2) == "A1"){
+                    fileout << "1A ";
+                  } else if (line.substr(6,2) == "B1"){
+                    fileout << "1B ";
+                  } else if (line.substr(6,2) == "C1"){
+                    fileout << "1C ";
+                  } else if (line.substr(6,2) == "A2"){
+                    fileout << "2A ";
+                  } else if (line.substr(6,2) == "B2"){
+                    fileout << "2B ";
+                  } else if (line.substr(6,2) == "C2"){
+                    fileout << "2C ";
+                  }
+                }
+                if (line.substr(0,3) == "DIV"){
+                  fileout << "AA ";
+                  if (line.substr(4,2) == "A1"){
+                    fileout << "1A ";
+                  } else if (line.substr(4,2) == "B1"){
+                    fileout << "1B ";
+                  } else if (line.substr(4,2) == "C1"){
+                    fileout << "1C ";
+                  } else if (line.substr(4,2) == "A2"){
+                    fileout << "2A ";
+                  } else if (line.substr(4,2) == "B2"){
+                    fileout << "2B ";
+                  } else if (line.substr(4,2) == "C2"){
+                    fileout << "2C ";
+                  }
+                  if (line.substr(6,2) == "A1"){
+                    fileout << "1A ";
+                  } else if (line.substr(6,2) == "B1"){
+                    fileout << "1B ";
+                  } else if (line.substr(6,2) == "C1"){
+                    fileout << "1C ";
+                  } else if (line.substr(6,2) == "A2"){
+                    fileout << "2A ";
+                  } else if (line.substr(6,2) == "B2"){
+                    fileout << "2B ";
+                  } else if (line.substr(6,2) == "C2"){
+                    fileout << "2C ";
+                  }
+                }
           }
         }
    }

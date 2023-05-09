@@ -1,5 +1,4 @@
 *.exe
 *.ct
 *.max
-build/*
 .vscode/*

@@ -24,6 +24,14 @@ elif len(sys.argv) >= 2:#build executable dicrectly
                     code+=f"9B {linesplt[1][1]}{linesplt[1][0]} "
                 case "JMP":
                     code+=f"9E {linesplt[1][1]}{linesplt[1][0]} {f'{linesplt[2]} ' if len(linesplt) == 3 else ''}"
+                case "ADD":
+                    code+=f"9C {linesplt[1][1]}{linesplt[1][0]} {linesplt[2][1]}{linesplt[2][0]} "
+                case "SUB":
+                    code+=f"9D {linesplt[1][1]}{linesplt[1][0]} {linesplt[2][1]}{linesplt[2][0]} "
+                case "MUL":
+                    code+=f"9F {linesplt[1][1]}{linesplt[1][0]} {linesplt[2][1]}{linesplt[2][0]} "
+                case "DIV":
+                    code+=f"AA {linesplt[1][1]}{linesplt[1][0]} {linesplt[2][1]}{linesplt[2][0]} "
         with open("source/runtime-direct.cpp","r") as runtimefile:#Compiler
             open("tempfile.cpp","w").close()
             with open("tempfile.cpp","a") as tempfile:
