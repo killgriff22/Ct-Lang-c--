@@ -1,7 +1,10 @@
 # CT Lang, C++ Version
-[x] No {Prerequisites}
-[x] Native compilation
-[x] 2 methods of compilation
+<ul>
+<lh>Features</lh>
+  <li>No {Prerequisites}</li>
+  <li>Native compilation</li>
+  <li>2 methods of compilation</li>
+</ul>
 <ol>
   <lh>Direct Compilation</lh>
   <li>Item One</li>
